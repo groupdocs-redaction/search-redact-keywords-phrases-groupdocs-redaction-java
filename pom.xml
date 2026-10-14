@@ -9,8 +9,8 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Search and Redact Keywords and Phrases with GroupDocs Redaction for Java</name>
-    <description>Search and redact specific keywords or phrases globally across multiple document formats using GroupDocs Redaction for Java.</description>
+    <name>GroupDocs Redaction Java Search and Redact Keywords and Phrases</name>
+    <description>Showcase project demonstrating phrase and keyword redaction in a Word document with GroupDocs Redaction.</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -55,26 +55,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>default</id>
-            <activation>
-                <file>
-                    <exists>${basedir}/.mvn/jvm.config</exists>
-                </file>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-compiler-plugin</artifactId>
-                        <configuration>
-                            <fork>false</fork>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
